@@ -1,0 +1,93 @@
+header {
+  background-color: #3d3d3d;
+}
+.top-header {
+  padding: 5px 0px;
+  background-color: #003cb8;
+}
+.top-header p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+.header_flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.header_flex .header_logo {
+  width: 55%;
+  padding-left: 60px;
+}
+.header_flex .header_menu {
+  width: 45%;
+}
+.header_flex .header_menu nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.header_flex .header_menu nav ul li a {
+  color: #e3e2e2;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+#toggleButton {
+  display: none;
+  border: none;
+  background-color: transparent !important;
+}
+#toggleButton img {
+  max-width: 30px;
+  max-height: 30px;
+}
+#navMenu {
+  display: block !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header_flex .header_logo {
+    width: 30%;
+    padding-left: 0;
+  }
+  .header_flex .header_menu {
+    width: 70% !important;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  button#toggleButton {
+    display: block !important;
+  }
+  nav#navMenu {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    top: 116px;
+    z-index: 66;
+    width: 100%;
+    padding: 30px;
+  }
+  nav#navMenu ul {
+    display: block !important;
+  }
+  nav#navMenu ul li a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  nav#navMenu ul li {
+    padding-bottom: 10px;
+  }
+  .header_flex .header_menu {
+    display: flex;
+    justify-content: right;
+  }
+}

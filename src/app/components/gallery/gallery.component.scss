@@ -1,0 +1,109 @@
+.gallery_section {
+  padding: 33px 0;
+}
+.gallery_section .gallery_img {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery_section .gallery_img {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.gallery_section .team_img {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.gallery_section {
+  margin: 33px 0;
+}
+.gallery_section .text_section {
+  display: flex;
+}
+.gallery_section .team_img {
+  position: relative;
+}
+.gallery_section .text_section {
+  position: absolute;
+  bottom: 21px;
+  left: 18px;
+  color: #fff;
+  z-index: 666;
+}
+.gallery_section .text_section {
+  position: absolute;
+  bottom: 21px;
+  left: 18px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.gallery_section .text_section h3,
+.gallery_section .text_section span {
+  font-size: 22px;
+  padding-right: 14px;
+  font-weight: 400;
+}
+.gallery_section .main_img {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.gallery_section .main_img img {
+  width: 100%;
+}
+.gallery_section .gallery_img {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  padding-left: 25px;
+}
+.gallery_section .galley_imges {
+  display: flex;
+}
+.gallery_section .galley_imges:last-child {
+  padding-left: 0;
+}
+.main_img::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #003cb8 100%);
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 666;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .gallery_section .text_section h3,
+  .gallery_section .text_section span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .gallery_section {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery_section .galley_imges {
+    flex-wrap: wrap;
+  }
+  .gallery_section .gallery_img {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .great_slider_flex {
+    flex-wrap: wrap;
+  }
+}

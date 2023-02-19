@@ -1,0 +1,142 @@
+<!------------great slider---------->
+<section class="great_slider">
+  <div class="container">
+    <div class="great_slider_flex">
+      <div class="trustpilot">
+        <h2>Great</h2>
+        <div class="rating">
+          <img src="assets/rating.png" alt="" />
+        </div>
+        <h6>Based on 8,406 reviews</h6>
+        <div class="trustpilot_logo">
+          <img src="assets/trustpilot.png" alt="" />
+        </div>
+      </div>
+
+      <swiper
+        [config]="config"
+        (swiper)="onSwiper($event)"
+        (slideChange)="onSlideChange()"
+        class="slider_side"
+      >
+        <ng-template swiperSlide>
+          <div class="verified">
+            <div class="verified_flex">
+              <img src="assets/verified.png" alt="" />
+              <p>Verified</p>
+            </div>
+            <h6>Excellent service</h6>
+            <p>
+              Excellent service, queries highlighted promptly and action taken
+              once corrected...
+            </p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="verified">
+            <div class="verified_flex">
+              <img src="assets/verified.png" alt="" />
+              <p>Verified</p>
+            </div>
+            <h6>Excellent service</h6>
+            <p>
+              Excellent service, queries highlighted promptly and action taken
+              once corrected...
+            </p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="verified">
+            <div class="verified_flex">
+              <img src="assets/verified.png" alt="" />
+              <p>Verified</p>
+            </div>
+            <h6>Excellent service</h6>
+            <p>
+              Excellent service, queries highlighted promptly and action taken
+              once corrected...
+            </p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="verified">
+            <div class="verified_flex">
+              <img src="assets/verified.png" alt="" />
+              <p>Verified</p>
+            </div>
+            <h6>Excellent service</h6>
+            <p>
+              Excellent service, queries highlighted promptly and action taken
+              once corrected...
+            </p>
+          </div>
+        </ng-template>
+      </swiper>
+
+      <!-- <div class="slider_side">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="verified">
+                <div class="verified_flex">
+                  <img src="assets/verified.png" alt="" />
+                  <p>Verified</p>
+                </div>
+                <h6>Excellent service</h6>
+                <p>
+                  Excellent service, queries highlighted promptly and action
+                  taken once corrected...
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="verified">
+                <div class="verified_flex">
+                  <img src="assets/verified.png" alt="" />
+                  <p>Verified</p>
+                </div>
+                <h6>Excellent service</h6>
+                <p>
+                  Excellent service, queries highlighted promptly and action
+                  taken once corrected...
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="verified">
+                <div class="verified_flex">
+                  <img src="assets/verified.png" alt="" />
+                  <p>Verified</p>
+                </div>
+                <h6>Excellent service</h6>
+                <p>
+                  Excellent service, queries highlighted promptly and action
+                  taken once corrected...
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="verified">
+                <div class="verified_flex">
+                  <img src="assets/verified.png" alt="" />
+                  <p>Verified</p>
+                </div>
+                <h6>Excellent service</h6>
+                <p>
+                  Excellent service, queries highlighted promptly and action
+                  taken once corrected...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/right_arrow.png" alt="" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="assets/left_arrow.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>

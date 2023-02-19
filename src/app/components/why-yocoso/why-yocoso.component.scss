@@ -1,0 +1,136 @@
+.why_flex {
+  display: flex;
+  width: 100%;
+}
+.why_left {
+  width: 33.33%;
+}
+.why_center {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why_center img {
+  border-radius: 15px;
+  z-index: 6;
+  position: relative;
+}
+.why_right {
+  width: 33.33%;
+}
+.why h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 54px;
+  color: #003cb8;
+  z-index: 6;
+  position: relative;
+}
+.why_left .why_content h4 {
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+  color: #003cb8;
+  padding-bottom: 10px;
+  z-index: 6;
+  position: relative;
+}
+.why_left .why_content p {
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  color: #000000;
+  z-index: 6;
+  position: relative;
+}
+.why_left .why_content {
+  padding-bottom: 40px;
+  z-index: 6;
+  position: relative;
+}
+.why_right .why_content h4 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #003cb8;
+  padding-bottom: 10px;
+  z-index: 6;
+  position: relative;
+}
+.why_right .why_content p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  z-index: 6;
+  position: relative;
+}
+.why_right .why_content {
+  padding-bottom: 40px;
+  z-index: 6;
+  position: relative;
+}
+.why {
+  padding: 40px 0;
+  background-image: url(../../../assets/why.png);
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+.why::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .why_left .why_content h4 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+  .why_right .why_content h4 {
+    font-size: 18px;
+  }
+  .why_center {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .why h2 {
+    font-size: 27px;
+  }
+  .why_flex {
+    flex-wrap: wrap;
+  }
+  .why_left {
+    width: 100%;
+  }
+  .why_left .why_content h4,
+  .why_left .why_content p {
+    text-align: center;
+  }
+  .why_right {
+    width: 100%;
+  }
+  .why_center {
+    width: 100%;
+  }
+  .why_center img {
+    max-width: 250px;
+    margin: 15px 0;
+  }
+
+  .why {
+    background-size: cover;
+    background-position: center center;
+  }
+}

@@ -1,0 +1,114 @@
+.great_slider {
+  padding: 30px 0;
+}
+.great_slider_flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.trustpilot {
+  width: 25%;
+}
+.slider_side {
+  width: 70%;
+}
+.trustpilot h2 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #0dd501;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.trustpilot {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 60px;
+}
+.trustpilot h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 54px;
+  color: #000000;
+}
+.slider_side .swiper,
+.slider_side .swiper-wrapper {
+  padding: 0 22px;
+}
+
+.verified_flex {
+  display: flex;
+}
+.verified_flex p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  padding-left: 10px;
+}
+.verified_flex img {
+  object-fit: contain;
+}
+.slider_side h6 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 0;
+}
+.slider_side p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.verified {
+  background: #f5f5f5;
+  padding: 60px 20px;
+}
+// .swiper-button-prev::after {
+//   display: none;
+// }
+// .swiper-button-next::after {
+//   display: none;
+// }
+// .swiper-button-prev {
+//   left: 0 !important;
+// }
+// .swiper-button-next {
+//   right: 0 !important;
+// }
+
+@media only screen and (max-width: 1199px) {
+  .verified_flex {
+    display: block;
+  }
+  .trustpilot h6 {
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 0;
+  }
+  .verified {
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .trustpilot {
+    width: 30%;
+  }
+  .slider_side {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .great_slider {
+    padding: 30px 0;
+  }
+
+  .trustpilot {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .slider_side {
+    width: 100%;
+  }
+}
