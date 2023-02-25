@@ -14,7 +14,9 @@
       </div>
 
       <swiper
+        #swiperSlideShow
         [config]="config"
+        [autoplay]="true"
         (swiper)="onSwiper($event)"
         (slideChange)="onSlideChange()"
         class="slider_side"

@@ -3,6 +3,7 @@
 }
 .great_slider_flex {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
 }
@@ -11,6 +12,7 @@
 }
 .slider_side {
   width: 70%;
+  // overflow: unset;
 }
 .trustpilot h2 {
   font-weight: 700;
